@@ -1,0 +1,46 @@
+<charges>
+	<userclass>
+		<classname>adhoc</classname>
+		<service>
+			<serviceclass>local</serviceclass>
+			<servicemethod charge="0.05">call</servicemethod>
+			<servicemethod charge="0.02">text</servicemethod>
+		</service>
+	</userclass>
+	<userclass>
+		<classname>prepaid</classname>
+		<service>
+			<serviceclass>longdistance</serviceclass>
+			<servicemethod charge="0.05">call</servicemethod>
+			<servicemethod charge="0.02">text</servicemethod>
+		</service>
+		<service>
+			<serviceclass>international</serviceclass>
+			<servicemethod charge="0.25">call</servicemethod>
+			<servicemethod charge="0.10">text</servicemethod>
+		</service>
+		<service>
+			<serviceclass>local</serviceclass>
+			<servicemethod charge="0.01">call</servicemethod>
+			<servicemethod charge="0.01">text</servicemethod>
+		</service>
+	</userclass>
+	<userclass>
+		<classname>monthly</classname>
+		<service>
+			<serviceclass>longdistance</serviceclass>
+			<servicemethod charge="0.03">call</servicemethod>
+			<servicemethod>text</servicemethod>
+		</service>
+		<service>
+			<serviceclass>international</serviceclass>
+			<servicemethod charge="0.05">call</servicemethod>
+			<servicemethod>text</servicemethod>
+		</service>
+		<service>
+			<serviceclass>local</serviceclass>
+			<servicemethod>call</servicemethod>
+			<servicemethod>text</servicemethod>
+		</service>
+	</userclass>
+</charges>
